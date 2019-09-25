@@ -1,0 +1,111 @@
+html{
+	height: 100%; /* meilleur moyen trouvé, en le couplant avec tout ce qui se trouve dans body{}, pour garder le <footer> toujours en bas, 
+					et pour que la partie <section> soit toujours au centre, quel que soit la taille de l'écran*/
+}
+body{
+	font-family: roboto, arial, serif;
+	display: flex;
+	height: 100%;
+	margin: 0px;
+	justify-content: space-between;
+	flex-flow: column;
+}
+nav{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15PX;
+}
+a{
+	padding-right: 10px;
+	text-decoration: none;
+	color: rgb(111,111,111);
+	margin-left: 30px;
+}
+p{
+	padding-right: 10px;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+.boutons{
+	display: flex;
+	justify-content: center;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	background-color: rgb(242, 242, 242);
+	color: rgb(111,111,111);
+}
+.footer1{
+	border-top: solid 1px;
+	border-color: rgb(228, 228, 228);
+	margin-left: 40px;
+}
+.footer2{
+	display: flex;
+	justify-content: space-between;
+	border-top: solid 1px;
+	border-color: rgb(228, 228, 228);
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+.basgauche{
+	display: flex;
+	justify-content: flex-start;
+}
+.basdroite{
+	display: flex;
+	justify-content: flex-end;
+}
+.recherche{
+	display: flex;
+	justify-content: center;
+}
+input[type=text] {
+	width: 550px;
+	margin: 30px;
+	padding: 15px;
+	background-image: url('contenu/loupe.png');
+	background-repeat: no-repeat;
+	background-size: 18px;
+	background-position: 8px 13px;
+	border-radius: 32px;
+}
+input[type=submit]{
+	background-color: rgb(242,242,242);
+	color:rgb(114,117,121);
+	border: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 15px 45px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+.logo{
+    max-width:40%;
+    height:auto;
+    display: flex;
+	align-self: center;
+}
+.menu{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.connexion a{
+	color: white;
+}
+.connexion{
+	background-color: rgb(85,131,234);
+	width: 120px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
